@@ -1,0 +1,25 @@
+{
+  "name": "Instablam",
+  "short_name": "Ins",
+  "start_url": "/",
+  "background_color": "#fff7e5",
+  "theme_color": "#fff7e5",
+  "orientation": "any",
+  "display": "standalone",
+  "dir": "ltr",
+  "lang": "en-US",
+  "description": "Instablam",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "img/ins-android.chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/ins-android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

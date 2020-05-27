@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instablam</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/ins-apple-touch.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/ins-favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/ins-favicon-16.png"
+    />
+    <meta name="theme-color" content="#fff7e5" />
+  </head>
+  <body>
+    <h1>Instablam</h1>
+    <button class="btn subscribeBtn">Subsctibe app</button>
+    <button class="btn" id="showVideo">Show my face</button>
+    <div class="video-div hide">
+      <video id="me" class="camera"></video>
+      <button class="btn" id="screenShot">Take photo</button>
+    </div>
+    <!--<img src="" id="photo" alt="" />-->
+
+    <div>
+      <canvas id="photo" width="100%" height="auto"></canvas>
+    </div>
+
+    <div class="filters hide" id="filters">
+      <h1>Filters</h1>
+      <div class="filter">
+        <label for="birghtness">Birghtness</label>
+        <input
+          type="range"
+          min="-100"
+          max="100"
+          step="1"
+          value="0"
+          data-filter="brightness"
+          id="brightness"
+        />
+        <span class="valueBright">0</span>
+      </div>
+
+      <div class="filter">
+        <label for="exposure">Exposure</label>
+        <input
+          type="range"
+          min="-100"
+          max="100"
+          step="1"
+          value="0"
+          data-filter="exposure"
+          id="exposure"
+        />
+        <span class="valueExposure">0</span>
+      </div>
+
+      <div class="filter">
+        <label for="noise">Noise</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="0"
+          data-filter="noise"
+          id="noise"
+        />
+        <span class="valueNoise">0</span>
+      </div>
+
+      <div class="filter">
+        <label for="hue">Hue</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="0"
+          data-filter="hue"
+          id="hue"
+        />
+        <span class="valueHue">0</span>
+      </div>
+
+      <div class="filter">
+        <label for="sepia">Sepia</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="0"
+          data-filter="sepia"
+          id="sepia"
+        />
+        <span class="valueSepia">0</span>
+      </div>
+
+      <button class="revertBtn">Revert</button>
+      <a href="#" id="download" download
+        ><button class="saveBtn">Download</button></a
+      >
+      <h2 class="offline-text hide">Ops, unable to download while offline.</h2>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="./CamanJS-4.1.1/dist/caman.full.min.js"
+    ></script>
+  </body>
+</html>
